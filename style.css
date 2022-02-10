@@ -1,0 +1,587 @@
+/* Font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 10px;
+    --vd-blue: hsl(243, 87%, 12%);
+    --des-blue: hsl(238, 22%, 44%);
+    --bri-blue: hsl(224, 93%, 58%);
+    --lg--blue: hsl(240, 75%, 98%);
+    --lig--gray: hsl(0, 0%, 75%);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--vd-blue);
+    padding-top: 2rem;
+}
+
+.container {
+    text-align: center;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Header Section */
+header{
+    margin-bottom: 3rem;
+}
+
+.fylo__nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.fylo__nav__logo img{
+    object-fit: cover;
+    width: 70px;
+}
+
+.fylo__nav__links{
+    
+}
+
+.fylo__nav__links li{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-left: 1.5em;
+}
+
+@media only screen and (max-width: 320px) {
+    .fylo__nav__links li{
+        font-size: 1.2rem;
+    }
+}
+
+.fylo__nav__links a{
+    color: var(--des-blue);
+    font-weight: 400;
+    padding: .4rem;
+}
+
+.fylo__nav__links a:hover{
+    border-bottom: 2px solid var(--des-blue);
+}
+
+/* Main Section */
+main{
+
+}
+
+.wrapper{
+    background: url(bg-curve-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 40px;
+}
+
+.wrapper .wrapper1{
+    background-color: var(--lg--blue);
+}
+
+.fylo__main__sec{
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+}
+
+.fylo__main__sec__right{
+    max-width: 700px;
+}
+.fylo__main__sec__left{
+    max-width: 700px;
+}
+
+.fylo__main__sec__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+    line-height: 1.2em;
+}
+
+.fylo__main__sec__text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 2.2rem;
+}
+
+.fylo__main__sec__right .fylo__main__sec__text{
+    text-align: left;
+}
+
+.fylo__main__sec__form{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.fylo__main__sec__form input{
+    font-size: 1.5rem;
+    padding: .5em;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.fylo__main__sec__form input::placeholder{
+    color: rgba(0, 0, 0, 0.13);
+    font-size: 1.3rem;
+}
+
+.fylo__main__sec__form button{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .7em;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    background-color: var(--bri-blue);
+    border: none;
+}
+
+.fylo__main__sec__form button:hover{
+    background-color: hsla(224, 88%, 77%, 0.986);
+}
+
+.fylo__main__sec__img{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.fylo__main__sec__img img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.fylo__main__sec__link{
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    gap: 5px;
+    border-bottom: 1px solid green;
+    margin-bottom: 2.5rem;
+}
+
+.fylo__main__sec__link a{
+    color: green;
+    font-size: 1.5rem;
+    padding-bottom: .3rem;
+    position: relative;
+}
+
+.fylo__main__sec__link__img img{
+    margin-top: 2px;
+}
+
+
+/* Comment */
+.fylo__comment{
+    text-align: left;
+    width: 90%;
+    max-width: 350px;
+    padding: 1.5rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.137);
+}
+
+.fylo__comment__img{
+    width: 100%;
+}
+
+.fylo__comment__img img{
+    object-fit: cover;
+}
+
+.fylo__comment__text{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+}
+
+.fylo__comment__testimonial{
+    display: flex;
+    margin-bottom: 2rem;
+    gap: .7rem;
+}
+
+.fylo__comment__avatar{
+    width: 100%;
+    flex: .9;
+}
+
+.fylo__comment__avatar img{
+    object-fit: cover;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.fylo__comment__identity{
+    margin-top: 3px;
+    width: 100%;
+    flex: 4;
+}
+
+.fylo__comment__name{
+    font-size: 1.8rem;
+}
+
+.fylo__comment__status{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 320px){
+    .fylo__comment__testimonial{
+        gap: 0rem;
+    }
+
+    .fylo__comment__avatar img{
+        width: 30px;
+    }
+
+    .fylo__comment__name{
+        font-size: 1.3rem;
+    }
+    
+    .fylo__comment__status{
+        font-size: 1.0rem;
+    }
+}
+
+/* Main Bottom section */
+
+.main__bottom{
+    color: white;
+    background-color: var(--des-blue);
+    padding: 2rem;
+}
+
+.main__bottom__wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__bottom__left{
+    
+}
+
+.main__bottom__title{
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.main__bottom__text{
+    font-size: 1.5rem;
+    line-height: 1.4em;
+    margin-bottom: 1.8rem;
+}
+
+.main__bottom__right{
+    
+}
+
+.main__bottom__form{
+    margin-bottom: 3rem;
+}
+
+.main__bottom__form input{
+    width: 80%;
+    padding: 1rem .5rem;
+    margin-bottom: .8rem;
+}
+
+.main__bottom__form input::placeholder{
+    color: rgba(0, 0, 0, 0.24);
+}
+
+.main__bottom__form button{
+    color: white;
+    font-weight: 600;
+    width: 80%;
+    padding: 1rem .5rem;
+    margin-bottom: .8rem;
+    border: none;
+    background-color: var(--bri-blue);
+    cursor: pointer;
+}
+
+
+.main__bottom__form button:hover{
+    background-color: hsla(224, 88%, 77%, 0.986);
+}
+
+/* Footer Secton Styles */
+footer{
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    background-color: var(--vd-blue);
+}
+
+.fylo__footer__wrapper{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.fylo__footer__info{
+    margin-bottom: 2rem;
+}
+
+.fylo__footer__logo{
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.fylo__footer__logo img{
+    object-fit: cover;
+    width: 120px;
+}
+
+.fylo__footer__phone{
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.fylo__footer__phone__img{
+    margin-top: 3px;
+}
+
+.fylo__footer__phone__img img{
+    object-fit: cover;
+    
+}
+
+
+.fylo__footer__phone__text{
+    
+}
+
+.fylo__footer__email{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.fylo__footer__email__img{
+    margin-top: 3px;
+}
+
+.fylo__footer__email__img img{
+    object-fit: cover;
+    
+}
+
+.fylo__footer__email__text{
+    
+}
+
+.down ul{
+    margin-bottom: 3rem;
+}
+
+.down li{
+    margin-bottom: 1rem;
+}
+
+.down a{
+    color: white;
+}
+
+.down a:hover{
+    color: var(--bri-blue);
+    border-color: var(--bri-blue);
+}
+
+.fylo__footer__socials{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.fylo__footer__socials a{
+    padding-top: .6rem;
+    margin-right: 1.5rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.fylo__footer__socials i{
+    
+}
+
+/* Media query */
+@media only screen and (min-width: 768px){
+    header{
+        margin-bottom: 6rem;
+    }
+
+    .fylo__nav__logo img{
+        width: 100px;
+    }
+
+    .fylo__nav__links li{
+        font-size: 1.8rem;
+        margin-left: 4em;
+    }
+
+    .fylo__nav__links a{
+        font-weight: 600;
+    }
+
+    .wrapper{
+        background: url(bg-curve-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top;
+        padding-top: 110px;
+    }
+
+    .fylo__main__sec{
+        max-width: none;
+        margin-bottom: 5rem;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    
+    .fylo__main__sec__right{
+        text-align: left;
+        flex: 2;
+        align-self: center;
+    }
+
+    .fylo__main__sec__left{
+        flex: 3;
+    }
+    
+    .fylo__main__sec__title{
+        font-size: 2.7rem;
+    }
+    
+    .fylo__main__sec__text{
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+    
+    .fylo__main__sec__right .fylo__main__sec__text{
+        text-align: left;
+    }
+    
+    .fylo__main__sec__form{
+        max-width: none;
+    }
+    
+    .fylo__main__sec__form input{
+        width: 45%;
+        margin-right: 10px;
+    }
+    
+    .fylo__main__sec__form button{
+        width: 40%;
+    }
+
+    .main__bottom{
+        padding: 7rem 0;
+    }
+    
+    .main__bottom__wrapper{
+        max-width: none;
+        gap: 3rem;
+        flex-direction: row;
+    }
+    
+    .main__bottom__left{
+        text-align: left;
+        flex: 1;
+    }
+    
+    .main__bottom__title{
+        font-size: 2.5rem;
+    }
+    
+    .main__bottom__text{
+        font-size: 1.8rem;
+    }
+    
+    .main__bottom__right{
+        flex: 1;
+    }
+    
+    .main__bottom__form{
+        margin-bottom: 3rem;
+    }
+    
+    .main__bottom__form input{
+        font-size: 1.8rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .main__bottom__form button{
+        font-size: 1.8rem;
+        width: 50%;
+        margin-right: 50%;
+    }
+
+    footer{
+        font-size: 1.7rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        
+    }
+
+    .fylo__footer__wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+
+    .down{
+        margin-top: 6rem;
+    }
+}
